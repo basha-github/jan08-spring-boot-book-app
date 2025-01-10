@@ -10,10 +10,22 @@ public class Book {
 	private String title;
 	private String author;
 	private String price;
+	private String imgUrl;
+	
+	
 	public Book() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
 	public String getTitle() {
 		return title;
 	}
@@ -32,10 +44,11 @@ public class Book {
 	public void setPrice(String price) {
 		this.price = price;
 	}
+
 	@Override
 	public String toString() {
-		return "Book [title=" + title + ", author=" + author + ", price=" + price + "]";
+		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", imgUrl=" + imgUrl + "]";
 	}
-
+	
 	
 }

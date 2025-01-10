@@ -18,11 +18,7 @@ public class BookController {
 
 	@PostMapping("/uday-publications/book/add")
 	public Book addNewBook(@RequestBody Book book ) {
-		
-		//System.out.println("from react....book..."+book);
-		
 		return bookService.saveIntoDB(book);
-		
 	}
 	
 	
