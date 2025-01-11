@@ -75,5 +75,9 @@ public class UserService {
 		return bookUserRepo.findAll();
 	}
 
+	public List<BookUser> saveAllNewUsers(List<BookUser> bookUsersList) {
+		return bookUserRepo.saveAll(bookUsersList);
+	}
+
 	
 }

@@ -27,6 +27,11 @@ public class UserController {
 		return userService.saveNewUser(bookUser);
 	}
 	
+	@PostMapping("/uday-publications/book/user/add/all")
+	public List<BookUser> addAllNewUsers(@RequestBody List<BookUser> bookUsersList) {
+		
+		return userService.saveAllNewUsers(bookUsersList);
+	}
 	
 	@GetMapping("/uday-publications/book/user/check")
 	public boolean checkUser(@RequestParam String uName,String password) {
@@ -51,6 +56,5 @@ public class UserController {
 		
 		return userService.getAllUsers();
 	}
-	
 	
 }
