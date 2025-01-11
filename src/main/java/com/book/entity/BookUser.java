@@ -15,6 +15,17 @@ public class BookUser {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	
+	public BookUser(String userName, String password) {
+		super();
+		this.userName = userName;
+		this.password = password;
+	}
+
+
+
 	public String getUserName() {
 		return userName;
 	}
